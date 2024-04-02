@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <title>Buenas finanzas</title>
 </head>
 <body>
     <nav>
         <div class="nav__logo"><a href="">Buenas Finanzas</a></div>
-        <ul class="nav__links">
+        <!-- <ul class="nav__links">
             <li class="link"><a href="">Principal</a></li>
             <li class="link"><a href="">Otros cursos</a></li>
             <li class="link"><a href="">Preguntas frecuentes</a></li>
-        </ul>
+        </ul> -->
     </nav>
     <section class="container">
         <div class="content__container">
@@ -27,9 +28,14 @@
             Con ayuda de mis consejos, muchas mujeres han logrado alcanzar sus metas financieras.
             Forma parte de esta comunidad y empodera tu crecimiento.
         </p>
-        <form>
-            <input type="email" placeholder="Escribe tu correo electrónico" />
-            <button type="submit">Quiero aprender</button>
+        <form class="needs-validation" novalidate>
+          <div class="input-group mb-3">
+            <input type="email" class="form-control" id="email" placeholder="Escribe tu correo electrónico" required>
+            <div class="invalid-feedback">
+              Por favor, ingresa un correo electrónico válido.
+            </div>
+            <button type="submit" class="btn btn-primary">Quiero aprender</button>
+          </div>
         </form>
         </div>
         <div class="image__container">
@@ -64,5 +70,119 @@
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat doloremque possimus pariatur esse aperiam. Deserunt expedita, doloremque quod dolorem est neque corrupti ad magni tenetur saepe, distinctio non harum perferendis.</p>
         </div>
     </section>
+    <section class="beneficios">
+        <div class="title">
+        <h1>Beneficios</h1>
+        <p>Conoce algunos de los beneficios que obtendrás al tomar el curso.</p>
+        </div>
+        <div class="contenido">
+            <ul>
+              <li>
+                <span class="numero">01</span>
+                <h3>BENEFICIO 1</h3>
+              </li>
+              <li>
+                <span class="numero">02</span>
+                <h3>BENEFICIO 2</h3>
+              </li>
+              <li>
+                <span class="numero">03</span>
+                <h3>BENEFICIO 3</h3>
+              </li>
+              <li>
+                <span class="numero">04</span>
+                <h3>BENEFICIO 4</h3>
+              </li>
+              <li>
+                <span class="numero">05</span>
+                <h3>BENEFICIO 5</h3>
+              </li>
+              <li>
+                <span class="numero">06</span>
+                <h3>BENEFICIO 6</h3>
+              </li>
+              <li>
+                <span class="numero">07</span>
+                <h3>BENEFICIO 7</h3>
+              </li>
+            </ul>
+            <div class="grafico">
+              <img src="/assets/Beneficios.svg" alt="Gráfico de beneficios">
+            </div>
+          </div>
+       </section>
+       <section class="aboutme">
+        <div class="title">
+            <h1>Acerca de mí</h1>
+            <p>Te comparto un poco de mi propio camino.</p>
+            </div>
+            <div class="aboutme-container">
+       <div id="demo" class="carousel slide" data-bs-ride="carousel">
+         <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>    
+        </div>
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/assets/AboutMe1.svg" alt="Acerca de mi" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="/assets/AboutMe2.svg" alt="Acerca de mi" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="/assets/AboutMe3.svg" alt="Acerca de mi" class="d-block w-100">
+          </div>
+        </div>
+      
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+    </div>
+    </section>
+      <section class="course">
+        <div class="title">
+            <h1>Sobre el curso</h1>
+            <p>Aprovecha nuestro descuento exclusivo al dar de alta tu correo.</p>
+            </div>
+            <div class="course-container">
+       <div class="card" style="width:400px">
+        <img class="card-img-top" src="/assets/Curso.svg" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">Abundancia Financiera</h4>
+          <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt tempora enim fugiat molestias dolores voluptate magni culpa illo commodi eius quisquam assumenda perferendis ex ipsum, iste, soluta laboriosam! Blanditiis, quisquam!</p>
+          <a href="#" class="btn btn-primary">Quiero aprender</a>
+        </div>
+    </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <footer>
+<h2>Proyecto Digital Nao. Entrega 2. Janeth Villarreal. </h2>    
+</footer>
+<script>
+  var forms = document.querySelectorAll('.needs-validation');
+
+  // Recorre cada formulario y evita el envío si hay campos inválidos
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+
+        form.classList.add('was-validated');
+      }, false);
+    });
+</script>
 </body>
 </html>
